@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission-sdk-23 android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!--Manifest.class decompiled-->
+    <!--
+    1. What is permission group in Android
+    2. public: modifier, static? , final:
+    3. uses-permission-sdk-23
+    4. permission vs uses-permission vs uses-feature
+    4. Design pattern for user-permission
+    11. PackageManager: retrieving various kinds of information related to the installed application packages
+    12. FeatureInfo, ConfigurationInfo
+    13. Create System Application
+
+    -->
+    <!--    https://gist.github.com/Arinerron/1bcaadc7b1cbeae77de0263f4e15156f-->
+    <!--    https://people.eecs.berkeley.edu/~dawnsong/papers/2011%20Android%20permissions%20demystified.pdf-->
+<!--    <uses-feature android:name="android.hardware.bluetooth" android:required="true" />-->
+<!--    <uses-feature android:name="android.hardware.camera.any" android:required="true" />-->
+
+<!--    <uses-permission-->
+<!--        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+<!--    -->
+<!--    <uses-permission android:name="android.permission.READ_BLOCKED_NUMBERS" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_DREAM_STATE" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_FRAME_BUFFER" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_INPUT_STATE" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_INSTALL_SESSIONS" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_LOGS" tools:ignore="ProtectedPermissions"/>-->
+<!--    <uses-permission android:name="android.permission.READ_NETWORK_USAGE_HISTORY" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_OEM_UNLOCK_STATE" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_PROFILE" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_SEARCH_INDEXABLES" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_SYNC_STATS" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" tools:ignore="ProtectedPermissions" />-->
+<!--    <uses-permission android:name="android.permission.READ_WIFI_CREDENTIAL" tools:ignore="ProtectedPermissions" />-->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DetailManagement"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
